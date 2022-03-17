@@ -7,3 +7,5 @@ So far we have managed to partially implement an API call to retrieve all articl
 however currently the request only returns one product (this is not the intended result)
 
 The code either needs to be improved or an unknown bug has to be fixed
+
+Worked on by: Rigen Kronaj, Nikaela Kronaj
