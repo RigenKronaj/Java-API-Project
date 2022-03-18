@@ -22,8 +22,8 @@ public class ArticleController {
         return new ResponseEntity<>(articleService.getData(), HttpStatus.OK);
     }
 
-    /*@RequestMapping(value ="/articles/update", method = RequestMethod.GET)
+    @RequestMapping(value ="/articles/update", method = RequestMethod.GET)
     public ResponseEntity<Object> updateArticle() throws FileNotFoundException, IOException{
         return new ResponseEntity<>(articleService.updateArticle(), HttpStatus.OK);
-    }*/
+    }
 }
