@@ -17,11 +17,27 @@ public class ArticleController {
     @Autowired
     ArticleService articleService;
 
+    
+    /** 
+     * @return ResponseEntity<Object>
+     * @throws FileNotFoundException
+     * @throws IOException
+     * </br>
+     * Using the "/articles" path, we can call the first method which returns all articles that are below minimum stock.
+     */
     @RequestMapping(value = "/articles", method = RequestMethod.GET)
     public ResponseEntity<Object> getData() throws FileNotFoundException, IOException{
         return new ResponseEntity<>(articleService.getData(), HttpStatus.OK);
     }
 
+    
+    /** 
+     * @return ResponseEntity<Object>
+     * @throws FileNotFoundException
+     * @throws IOException
+     * </br>
+     * Using the "/articles/update" path, we can call the second method and update the values of aforementioned articles.
+     */
     @RequestMapping(value ="/articles/update", method = RequestMethod.GET)
     public ResponseEntity<Object> updateArticle() throws FileNotFoundException, IOException{
         return new ResponseEntity<>(articleService.updateArticle(), HttpStatus.OK);

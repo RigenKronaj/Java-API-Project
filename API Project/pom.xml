@@ -33,14 +33,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-    		<groupId>com.roufid.tutorials</groupId>
-    		<artifactId>example-app</artifactId>
-    		<version>1.0</version>
-    		<scope>system</scope>
-    		<systemPath>${basedir}/org.json.simple-0.4.jar</systemPath>
-
-</dependency>
 	</dependencies>
 
 	<build>
